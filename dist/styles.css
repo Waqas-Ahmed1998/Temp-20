@@ -501,6 +501,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -511,10 +515,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .h-6 {
@@ -804,12 +804,6 @@ font-family: 'Vazirmatn', sans-serif;*/
   }
 }
 
-@media (min-width: 370px) {
-  .iphone6\:top-\[15\%\] {
-    top: 15%;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:top-\[10\%\] {
     top: 10%;
@@ -819,16 +813,16 @@ font-family: 'Vazirmatn', sans-serif;*/
     top: auto;
   }
 
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .md\:w-\[80\%\] {
     width: 80%;
   }
 
   .md\:w-\[50\%\] {
     width: 50%;
-  }
-
-  .md\:w-\[10rem\] {
-    width: 10rem;
   }
 
   .md\:w-fit {
@@ -897,24 +891,14 @@ font-family: 'Vazirmatn', sans-serif;*/
     padding-bottom: 0px;
   }
 
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:text-3xl {
@@ -938,5 +922,11 @@ font-family: 'Vazirmatn', sans-serif;*/
 
   .md\:leading-\[1\.2\] {
     line-height: 1.2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 }
